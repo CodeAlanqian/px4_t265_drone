@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<launch>
+  <master auto="start"/>
+
+  <include file="$(find offboard_py)/launch/ydlidar.launch" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find offboard_py)/maps/7_28_620.yaml" output="screen"/>
+  <include file="$(find qingzhou_nav)/launch/amcl.launch" />
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+	  
+    <rosparam file="$(find offboard_py)/config/global_costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find offboard_py)/config/local_costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find offboard_py)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find offboard_py)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find offboard_py)/config/dwa_local_planner_params.yaml" command="load" />
+    <param name="base_global_planner" value="global_planner/GlobalPlanner" />
+    <param name="planner_frequency" value="0.0" />
+    <param name="planner_patience" value="5.0" /> 
+    <param name="cost_factor" value="0.15" />
+
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <param name="controller_frequency" value="5.0" />
+    <param name="controller_patience" value="15.0" />
+    <param name="clearing_rotation_allowed" value="false" /> <!-- Our carlike robot is not able to rotate in place -->
+
+    <!--    <remap from="/odom" to="/odom_ekf"/> --> 
+  </node>
+
+
+</launch>

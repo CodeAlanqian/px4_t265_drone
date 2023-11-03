@@ -1,0 +1,2 @@
+VIO:offboard_py:put_odom:realsense-ros/realsense2_camera:realsense-ros/realsense2_description
+-DCATKIN_DEVEL_PREFIX=/home/vins/PX4_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vins/PX4_ws/install -G Unix Makefiles

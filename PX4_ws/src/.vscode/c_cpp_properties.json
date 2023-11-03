@@ -1,0 +1,49 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ros1/PX4_ws/devel/include/**",
+        "/home/ros1/qingzhou2/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/ros1/cv_bridge_ws/install/include/**",
+        "/home/ros1/qingzhou2/src/amcl/include/**",
+        "/home/ros1/qingzhou2/src/base_local_planner/include/**",
+        "/home/ros1/qingzhou2/src/carrot_planner/include/**",
+        "/home/ros1/qingzhou2/src/clear_costmap_recovery/include/**",
+        "/home/ros1/qingzhou2/src/costmap_2d/include/**",
+        "/home/ros1/qingzhou2/src/costmap_prohibition_layer-kinetic-devel/include/**",
+        "/home/ros1/PX4_ws/src/ddynamic_reconfigure/include/**",
+        "/home/ros1/qingzhou2/src/diaodu/include/**",
+        "/home/ros1/qingzhou2/src/dwa_local_planner/include/**",
+        "/home/ros1/qingzhou2/src/global_planner/include/**",
+        "/home/ros1/qingzhou2/src/qingzhou_odom/imu_calibrate/imu_calib/include/**",
+        "/home/ros1/qingzhou2/src/qingzhou_odom/imu_tools/imu_complementary_filter/include/**",
+        "/home/ros1/qingzhou2/src/qingzhou_odom/imu_tools/imu_filter_madgwick/include/**",
+        "/home/ros1/qingzhou2/src/map_server/include/**",
+        "/home/ros1/qingzhou2/src/move_base/include/**",
+        "/home/ros1/qingzhou2/src/move_slow_and_clear/include/**",
+        "/home/ros1/qingzhou2/src/nav_core/include/**",
+        "/home/ros1/qingzhou2/src/navfn/include/**",
+        "/home/ros1/PX4_ws/src/put_odom/include/**",
+        "/home/ros1/PX4_ws/src/VIO/include/**",
+        "/home/ros1/qingzhou2/src/qingzhou_odom/qingzhou_bringup/include/**",
+        "/home/ros1/PX4_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/ros1/qingzhou2/src/qingzhou_odom/robot_pose_ekf/include/**",
+        "/home/ros1/qingzhou2/src/rotate_recovery/include/**",
+        "/home/ros1/qingzhou2/src/teb_local_planner/include/**",
+        "/home/ros1/qingzhou2/src/voxel_grid/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

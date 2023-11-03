@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/vins/PX4_ws/devel/setup.sh

@@ -1,0 +1,15 @@
+<launch>
+  <!-- launch node to throttle images for logging -->
+  <node name="drop_image1" pkg="topic_tools" type="drop" output="screen"
+    args="/camera/fisheye1/image_raw  9 10">
+  </node>
+  <node name="drop_image2" pkg="topic_tools" type="drop" output="screen"
+    args="/camera/fisheye2/image_raw  9 10">
+  </node>
+
+  <!-- Throttle odometry messages to a fixed rate around 25Hz -->
+  <node name="odom_throttler" type="drop" pkg="topic_tools" 
+    args="/camera/odom/sample 7 8 /camera/odom/sample_throttled" >
+  </node>
+
+</launch>

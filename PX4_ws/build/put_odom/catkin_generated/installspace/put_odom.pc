@@ -1,0 +1,8 @@
+prefix=/home/vins/PX4_ws/install
+
+Name: put_odom
+Description: Description of put_odom
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
