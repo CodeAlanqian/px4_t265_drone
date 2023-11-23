@@ -70,3 +70,19 @@ example:
 gcs_url:=udp://@192.168.0.105:14550
 
 ```
+
+
+
+### 使用方法
+
+```bash
+sudo chmod 777 /dev/ttyACM*
+
+开启mavros和t265转接桥
+roslaunch px4_realsense_bridge bridge_mavros.launch
+
+起飞
+rosrun offboard_py off_node.py
+
+```
+

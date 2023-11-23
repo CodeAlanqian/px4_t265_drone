@@ -31,7 +31,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/vins/px4_t265_drone/PX4_ws/src/VIO/package.xml"
   "/home/vins/px4_t265_drone/PX4_ws/src/offboard_py/CMakeLists.txt"
   "/home/vins/px4_t265_drone/PX4_ws/src/offboard_py/package.xml"
-  "/home/vins/px4_t265_drone/PX4_ws/src/offboard_py/scripts/off_node.py"
   "/home/vins/px4_t265_drone/PX4_ws/src/put_odom/CMakeLists.txt"
   "/home/vins/px4_t265_drone/PX4_ws/src/put_odom/package.xml"
   "/home/vins/px4_t265_drone/PX4_ws/src/put_odom/scripts/put_odom.py"

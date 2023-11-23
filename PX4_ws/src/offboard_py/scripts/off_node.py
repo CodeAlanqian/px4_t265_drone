@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python3
 # coding=utf-8
 import rospy
 from PX4 import PX4
@@ -41,7 +41,8 @@ statement = 0
 
     
 
-setpoint_array = np.array([[0,0,1], [0,1,1],[0,0,1]])
+setpoint_array = np.array([[0,0,0.7], [0,1,0.7],[0,0,0.7]])
+
 
 if __name__ == "__main__":
     rospy.init_node("off_node_py",anonymous=True)
@@ -49,9 +50,10 @@ if __name__ == "__main__":
     while(not rospy.is_shutdown() and not PX4_CTRL.current_state.connected):
         rate.sleep()
 
-    PX4_CTRL.set_point(0,0,1.0,0)
+    PX4_CTRL.set_point(0,0,0.7,0)
+    rospy.loginfo("setpoint 0 0 0.7 0")
     PX4_CTRL.set_velocity(0,0,0,0)
-
+    rospy.loginfo("setvelocity " )
 
     for i in range(50):
         if(rospy.is_shutdown()):
@@ -68,13 +70,13 @@ if __name__ == "__main__":
 
     last_req = rospy.Time.now()
     while(not rospy.is_shutdown()):
-        if(PX4_CTRL.current_state.mode != "OFFBOARD" and (rospy.Time.now() - last_req) > rospy.Duration(2.0)):
+        if(PX4_CTRL.current_state.mode != "OFFBOARD" and (rospy.Time.now() - last_req) > rospy.Duration(3.0)):
             if(PX4_CTRL.set_mode_client.call(PX4_CTRL.offb_set_mode).mode_sent == True):
                 rospy.loginfo("OFFBOARD enabled")
                 print("send_off_mode")
             last_req = rospy.Time.now()
         else:
-            if(not PX4_CTRL.current_state.armed and (rospy.Time.now() - last_req) > rospy.Duration(2.0)):
+            if(not PX4_CTRL.current_state.armed and (rospy.Time.now() - last_req) > rospy.Duration(3.0)):
                 if PX4_CTRL.takeoff_state.data == True:
                     PX4_CTRL.arm_cmd.value = True
                     PX4_CTRL.arming_client.call(PX4_CTRL.arm_cmd)
@@ -86,18 +88,21 @@ if __name__ == "__main__":
         PX4_CTRL.local_pub.publish(PX4_CTRL.pose)
         rate.sleep()
 
+    rospy.loginfo("Vehicle takeoff")
+
     while(not rospy.is_shutdown()):
         if statement == 0:
             PX4_CTRL.local_pub.publish(PX4_CTRL.pose)
-            if PX4_CTRL.distance_jugdge(0,0,1.0):
+            rospy.loginfo()
+            if PX4_CTRL.distance_jugdge(0,0,0.7):
                 statement = 1
         # 如果statement = 1 则开始工作
         elif statement == 1:
             for point in setpoint_array:
                 #跑点
                 print(point[0],point[1])
-                while not PX4_CTRL.distance_jugdge(point[0],point[1],1.0):
-                    PX4_CTRL.sett_PID_velocity(point[0],point[1],1.0,0)
+                while not PX4_CTRL.distance_jugdge(point[0],point[1],0.7):
+                    PX4_CTRL.sett_PID_velocity(point[0],point[1],0.7,0)
                     PX4_CTRL.local_vel_pub.publish(PX4_CTRL.vel)
                     rate.sleep()
             statement = 2

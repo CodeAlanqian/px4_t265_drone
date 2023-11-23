@@ -52,7 +52,3 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/offboard_py" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/src/offboard_py/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/offboard_py" TYPE PROGRAM FILES "/home/vins/px4_t265_drone/PX4_ws/build/offboard_py/catkin_generated/installspace/off_node.py")
-endif()
-
