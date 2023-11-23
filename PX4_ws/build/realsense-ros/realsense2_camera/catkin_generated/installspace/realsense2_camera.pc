@@ -1,4 +1,4 @@
-prefix=/home/vins/PX4_ws/install
+prefix=/home/vins/px4_t265_drone/PX4_ws/install
 
 Name: realsense2_camera
 Description: Description of realsense2_camera

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/vins/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
-  "/home/vins/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
-  "/home/vins/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
-  "/home/vins/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Extrinsics.lisp"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/IMUInfo.lisp"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/msg/Metadata.lisp"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/share/common-lisp/ros/realsense2_camera/srv/DeviceInfo.lisp"
   "CMakeFiles/realsense2_camera_generate_messages_lisp"
 )
 

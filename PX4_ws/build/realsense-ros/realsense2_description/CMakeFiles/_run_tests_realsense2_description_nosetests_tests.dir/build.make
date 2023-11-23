@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vins/PX4_ws/src
+CMAKE_SOURCE_DIR = /home/vins/px4_t265_drone/PX4_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
+CMAKE_BINARY_DIR = /home/vins/px4_t265_drone/PX4_ws/build
 
 # Utility rule file for _run_tests_realsense2_description_nosetests_tests.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
 include realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/progress.make
 
 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests:
-	cd /home/vins/PX4_ws/build/realsense-ros/realsense2_description && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/vins/PX4_ws/build/test_results/realsense2_description/nosetests-tests.xml "\"/usr/bin/cmake\" -E make_directory /home/vins/PX4_ws/build/test_results/realsense2_description" "/usr/bin/nosetests3 -P --process-timeout=60 --where=/home/vins/PX4_ws/src/realsense-ros/realsense2_description/tests --with-xunit --xunit-file=/home/vins/PX4_ws/build/test_results/realsense2_description/nosetests-tests.xml"
+	cd /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_description && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/run_tests.py /home/vins/px4_t265_drone/PX4_ws/build/test_results/realsense2_description/nosetests-tests.xml "\"/usr/bin/cmake\" -E make_directory /home/vins/px4_t265_drone/PX4_ws/build/test_results/realsense2_description" "/usr/bin/nosetests3 -P --process-timeout=60 --where=/home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_description/tests --with-xunit --xunit-file=/home/vins/px4_t265_drone/PX4_ws/build/test_results/realsense2_description/nosetests-tests.xml"
 
 _run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests
 _run_tests_realsense2_description_nosetests_tests: realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_descriptio
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean:
-	cd /home/vins/PX4_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/cmake_clean.cmake
+	cd /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/depend:
-	cd /home/vins/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/PX4_ws/src /home/vins/PX4_ws/src/realsense-ros/realsense2_description /home/vins/PX4_ws/build /home/vins/PX4_ws/build/realsense-ros/realsense2_description /home/vins/PX4_ws/build/realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vins/px4_t265_drone/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/px4_t265_drone/PX4_ws/src /home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_description /home/vins/px4_t265_drone/PX4_ws/build /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_description /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/_run_tests_realsense2_description_nosetests_tests.dir/depend
 

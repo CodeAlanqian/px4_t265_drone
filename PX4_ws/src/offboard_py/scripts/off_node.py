@@ -21,27 +21,27 @@ statement = 0
 #                                                       [0,0]]
 #                                                       )
 
-setpoint_array = np.array([[0,0],
-                            [-0.5,-2.15],
-                            [-0.1,-3.65],
-                            [1.42,-3.66],
-                            [2.86,-3.66],
-                            [2.84,-2.92],
-                            [0.59,-2.92],
-                            [0.66,-2.13],
-                            [2.87,-2.21],
-                            [2.82,-1.47],
-                            [0.59,-1.44],
-                            [0.64,-0.65],
-                            [2.83,-0.65],
-                            [2.83,0.04],
-                            [1.43,0.04],
-                            [-0.15,0.2]]
-)
+# setpoint_array = np.array([[0,0],
+#                             [-0.5,-2.15],
+#                             [-0.1,-3.65],
+#                             [1.42,-3.66],
+#                             [2.86,-3.66],
+#                             [2.84,-2.92],
+#                             [0.59,-2.92],
+#                             [0.66,-2.13],
+#                             [2.87,-2.21],
+#                             [2.82,-1.47],
+#                             [0.59,-1.44],
+#                             [0.64,-0.65],
+#                             [2.83,-0.65],
+#                             [2.83,0.04],
+#                             [1.43,0.04],
+#                             [-0.15,0.2]]
+# )
 
     
 
-# setpoint_array = np.array([[0,0,1.5], [0,0,1],[0,0,1.5]])
+setpoint_array = np.array([[0,0,1], [0,1,1],[0,0,1]])
 
 if __name__ == "__main__":
     rospy.init_node("off_node_py",anonymous=True)
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     while(not rospy.is_shutdown() and not PX4_CTRL.current_state.connected):
         rate.sleep()
 
-    PX4_CTRL.set_point(0,0,1.5,0)
+    PX4_CTRL.set_point(0,0,1.0,0)
     PX4_CTRL.set_velocity(0,0,0,0)
 
 
@@ -89,15 +89,15 @@ if __name__ == "__main__":
     while(not rospy.is_shutdown()):
         if statement == 0:
             PX4_CTRL.local_pub.publish(PX4_CTRL.pose)
-            if PX4_CTRL.distance_jugdge(0,0,1.5):
+            if PX4_CTRL.distance_jugdge(0,0,1.0):
                 statement = 1
         # 如果statement = 1 则开始工作
         elif statement == 1:
             for point in setpoint_array:
                 #跑点
                 print(point[0],point[1])
-                while not PX4_CTRL.distance_jugdge(point[0],point[1],1.5):
-                    PX4_CTRL.sett_PID_velocity(point[0],point[1],1.5,0)
+                while not PX4_CTRL.distance_jugdge(point[0],point[1],1.0):
+                    PX4_CTRL.sett_PID_velocity(point[0],point[1],1.0,0)
                     PX4_CTRL.local_vel_pub.publish(PX4_CTRL.vel)
                     rate.sleep()
             statement = 2

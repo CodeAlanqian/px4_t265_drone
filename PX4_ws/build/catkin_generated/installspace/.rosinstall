@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/vins/PX4_ws/install/setup.sh
+    local-name: /home/vins/px4_t265_drone/PX4_ws/install/setup.sh

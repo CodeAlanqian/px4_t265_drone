@@ -51,7 +51,7 @@ class PX4():
     def distance_jugdge(self,x,y,z=0.5):
         if math.sqrt(math.pow((self.current_local_pos.pose.position.x - x),2) + 
                                     math.pow((self.current_local_pos.pose.position.y - y),2) + 
-                                    math.pow((self.current_local_pos.pose.position.z - z),2)) < 0.08:
+                                    math.pow((self.current_local_pos.pose.position.z - z),2)) < 0.15:
             return True
         
     def set_velocity(self,x,y,z,yawrate):

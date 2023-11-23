@@ -1,4 +1,4 @@
-prefix=/home/vins/PX4_ws/devel
+prefix=/home/vins/px4_t265_drone/PX4_ws/devel
 
 Name: put_odom
 Description: Description of put_odom

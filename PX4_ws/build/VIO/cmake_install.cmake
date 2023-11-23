@@ -1,8 +1,8 @@
-# Install script for directory: /home/vins/PX4_ws/src/VIO
+# Install script for directory: /home/vins/px4_t265_drone/PX4_ws/src/VIO
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vins/PX4_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vins/px4_t265_drone/PX4_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridge.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridge.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_realsense_bridge/cmake" TYPE FILE FILES
-    "/home/vins/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridgeConfig.cmake"
-    "/home/vins/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridgeConfig-version.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridgeConfig.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/VIO/catkin_generated/installspace/px4_realsense_bridgeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_realsense_bridge" TYPE FILE FILES "/home/vins/PX4_ws/src/VIO/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/px4_realsense_bridge" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/src/VIO/package.xml")
 endif()
 

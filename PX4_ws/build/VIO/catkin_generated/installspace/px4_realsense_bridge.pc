@@ -1,4 +1,4 @@
-prefix=/home/vins/PX4_ws/install
+prefix=/home/vins/px4_t265_drone/PX4_ws/install
 
 Name: px4_realsense_bridge
 Description: Description of px4_realsense_bridge

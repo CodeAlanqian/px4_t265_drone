@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vins/PX4_ws/src
+CMAKE_SOURCE_DIR = /home/vins/px4_t265_drone/PX4_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
+CMAKE_BINARY_DIR = /home/vins/px4_t265_drone/PX4_ws/build
 
 # Utility rule file for visualization_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build: visualization
 .PHONY : VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 
 VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
-	cd /home/vins/PX4_ws/build/VIO && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/vins/px4_t265_drone/PX4_ws/build/VIO && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
 
 VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend:
-	cd /home/vins/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/PX4_ws/src /home/vins/PX4_ws/src/VIO /home/vins/PX4_ws/build /home/vins/PX4_ws/build/VIO /home/vins/PX4_ws/build/VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vins/px4_t265_drone/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/px4_t265_drone/PX4_ws/src /home/vins/px4_t265_drone/PX4_ws/src/VIO /home/vins/px4_t265_drone/PX4_ws/build /home/vins/px4_t265_drone/PX4_ws/build/VIO /home/vins/px4_t265_drone/PX4_ws/build/VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : VIO/CMakeFiles/visualization_msgs_generate_messages_eus.dir/depend
 

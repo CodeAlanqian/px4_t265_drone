@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vins/PX4_ws/src
+CMAKE_SOURCE_DIR = /home/vins/px4_t265_drone/PX4_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
+CMAKE_BINARY_DIR = /home/vins/px4_t265_drone/PX4_ws/build
 
 # Utility rule file for _realsense2_camera_generate_messages_check_deps_DeviceInfo.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
 include realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/progress.make
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo:
-	cd /home/vins/PX4_ws/build/realsense-ros/realsense2_camera && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py realsense2_camera /home/vins/PX4_ws/src/realsense-ros/realsense2_camera/srv/DeviceInfo.srv 
+	cd /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_camera && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py realsense2_camera /home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera/srv/DeviceInfo.srv 
 
 _realsense2_camera_generate_messages_check_deps_DeviceInfo: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo
 _realsense2_camera_generate_messages_check_deps_DeviceInfo: realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean:
-	cd /home/vins/PX4_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/cmake_clean.cmake
+	cd /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/depend:
-	cd /home/vins/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/PX4_ws/src /home/vins/PX4_ws/src/realsense-ros/realsense2_camera /home/vins/PX4_ws/build /home/vins/PX4_ws/build/realsense-ros/realsense2_camera /home/vins/PX4_ws/build/realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vins/px4_t265_drone/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/px4_t265_drone/PX4_ws/src /home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera /home/vins/px4_t265_drone/PX4_ws/build /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_camera /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/_realsense2_camera_generate_messages_check_deps_DeviceInfo.dir/depend
 

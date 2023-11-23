@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vins/PX4_ws/src
+CMAKE_SOURCE_DIR = /home/vins/px4_t265_drone/PX4_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vins/PX4_ws/build
+CMAKE_BINARY_DIR = /home/vins/px4_t265_drone/PX4_ws/build
 
 # Utility rule file for actionlib_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build: actionli
 .PHONY : offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 
 offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean:
-	cd /home/vins/PX4_ws/build/offboard_py && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/vins/px4_t265_drone/PX4_ws/build/offboard_py && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 
 offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend:
-	cd /home/vins/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/PX4_ws/src /home/vins/PX4_ws/src/offboard_py /home/vins/PX4_ws/build /home/vins/PX4_ws/build/offboard_py /home/vins/PX4_ws/build/offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vins/px4_t265_drone/PX4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vins/px4_t265_drone/PX4_ws/src /home/vins/px4_t265_drone/PX4_ws/src/offboard_py /home/vins/px4_t265_drone/PX4_ws/build /home/vins/px4_t265_drone/PX4_ws/build/offboard_py /home/vins/px4_t265_drone/PX4_ws/build/offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : offboard_py/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/depend
 

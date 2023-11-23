@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/vins/PX4_ws/devel/lib/px4_realsense_bridge/px4_realsense_bridge_node"
-  "/home/vins/PX4_ws/devel/lib/px4_realsense_bridge/px4_realsense_bridge_node.pdb"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/lib/px4_realsense_bridge/px4_realsense_bridge_node"
+  "/home/vins/px4_t265_drone/PX4_ws/devel/lib/px4_realsense_bridge/px4_realsense_bridge_node.pdb"
   "CMakeFiles/px4_realsense_bridge_node.dir/src/nodes/px4_realsense_bridge_node.cpp.o"
 )
 

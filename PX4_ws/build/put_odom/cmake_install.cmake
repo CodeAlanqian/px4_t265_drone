@@ -1,8 +1,8 @@
-# Install script for directory: /home/vins/PX4_ws/src/put_odom
+# Install script for directory: /home/vins/px4_t265_drone/PX4_ws/src/put_odom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vins/PX4_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vins/px4_t265_drone/PX4_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/PX4_ws/build/put_odom/catkin_generated/installspace/put_odom.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/build/put_odom/catkin_generated/installspace/put_odom.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/put_odom/cmake" TYPE FILE FILES
-    "/home/vins/PX4_ws/build/put_odom/catkin_generated/installspace/put_odomConfig.cmake"
-    "/home/vins/PX4_ws/build/put_odom/catkin_generated/installspace/put_odomConfig-version.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/put_odom/catkin_generated/installspace/put_odomConfig.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/put_odom/catkin_generated/installspace/put_odomConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/put_odom" TYPE FILE FILES "/home/vins/PX4_ws/src/put_odom/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/put_odom" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/src/put_odom/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/put_odom" TYPE PROGRAM FILES "/home/vins/PX4_ws/build/put_odom/catkin_generated/installspace/put_odom.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/put_odom" TYPE PROGRAM FILES "/home/vins/px4_t265_drone/PX4_ws/build/put_odom/catkin_generated/installspace/put_odom.py")
 endif()
 

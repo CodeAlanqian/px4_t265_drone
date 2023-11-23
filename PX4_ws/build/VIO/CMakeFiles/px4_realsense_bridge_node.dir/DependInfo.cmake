@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vins/PX4_ws/src/VIO/src/nodes/px4_realsense_bridge_node.cpp" "/home/vins/PX4_ws/build/VIO/CMakeFiles/px4_realsense_bridge_node.dir/src/nodes/px4_realsense_bridge_node.cpp.o"
+  "/home/vins/px4_t265_drone/PX4_ws/src/VIO/src/nodes/px4_realsense_bridge_node.cpp" "/home/vins/px4_t265_drone/PX4_ws/build/VIO/CMakeFiles/px4_realsense_bridge_node.dir/src/nodes/px4_realsense_bridge_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
-  "/home/vins/PX4_ws/src/VIO/include"
+  "/home/vins/px4_t265_drone/PX4_ws/src/VIO/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
@@ -33,7 +33,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vins/PX4_ws/build/VIO/CMakeFiles/px4_realsense_bridge.dir/DependInfo.cmake"
+  "/home/vins/px4_t265_drone/PX4_ws/build/VIO/CMakeFiles/px4_realsense_bridge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/vins/PX4_ws/src/offboard_py
+# Install script for directory: /home/vins/px4_t265_drone/PX4_ws/src/offboard_py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vins/PX4_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vins/px4_t265_drone/PX4_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_py.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_py.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/offboard_py/cmake" TYPE FILE FILES
-    "/home/vins/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_pyConfig.cmake"
-    "/home/vins/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_pyConfig-version.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_pyConfig.cmake"
+    "/home/vins/px4_t265_drone/PX4_ws/build/offboard_py/catkin_generated/installspace/offboard_pyConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/offboard_py" TYPE FILE FILES "/home/vins/PX4_ws/src/offboard_py/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/offboard_py" TYPE FILE FILES "/home/vins/px4_t265_drone/PX4_ws/src/offboard_py/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/offboard_py" TYPE PROGRAM FILES "/home/vins/PX4_ws/build/offboard_py/catkin_generated/installspace/off_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/offboard_py" TYPE PROGRAM FILES "/home/vins/px4_t265_drone/PX4_ws/build/offboard_py/catkin_generated/installspace/off_node.py")
 endif()
 

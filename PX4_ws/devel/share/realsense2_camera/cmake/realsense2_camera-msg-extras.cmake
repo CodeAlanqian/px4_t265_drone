@@ -1,2 +1,2 @@
-set(realsense2_camera_MESSAGE_FILES "/home/vins/PX4_ws/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg;/home/vins/PX4_ws/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg;/home/vins/PX4_ws/src/realsense-ros/realsense2_camera/msg/Metadata.msg")
-set(realsense2_camera_SERVICE_FILES "/home/vins/PX4_ws/src/realsense-ros/realsense2_camera/srv/DeviceInfo.srv")
+set(realsense2_camera_MESSAGE_FILES "/home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg;/home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg;/home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera/msg/Metadata.msg")
+set(realsense2_camera_SERVICE_FILES "/home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera/srv/DeviceInfo.srv")

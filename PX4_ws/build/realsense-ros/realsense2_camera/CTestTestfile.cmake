@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/vins/PX4_ws/src/realsense-ros/realsense2_camera
-# Build directory: /home/vins/PX4_ws/build/realsense-ros/realsense2_camera
+# Source directory: /home/vins/px4_t265_drone/PX4_ws/src/realsense-ros/realsense2_camera
+# Build directory: /home/vins/px4_t265_drone/PX4_ws/build/realsense-ros/realsense2_camera
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

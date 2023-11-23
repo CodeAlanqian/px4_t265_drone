@@ -1,4 +1,4 @@
-prefix=/home/vins/PX4_ws/devel
+prefix=/home/vins/px4_t265_drone/PX4_ws/devel
 
 Name: realsense2_description
 Description: Description of realsense2_description
