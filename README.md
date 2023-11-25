@@ -7,6 +7,12 @@
 基于Ubuntu20.04 x86架构工控机
 t265相机
 
+
+
+[无人机仿真Ubuntu20.04+MAVROS+PX4+Gazebo安装教程](./docs/无人机仿真Ubuntu20.04+MAVROS+PX4+Gazebo安装教程.md)
+
+
+
 ### ROS Noetic
 
 
